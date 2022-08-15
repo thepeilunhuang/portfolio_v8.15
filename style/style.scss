@@ -1,0 +1,543 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  position: relative;
+}
+.background {
+  position: absolute;
+  top: -10vh; //make sure it is close to very top
+  right: 0; //let it align right
+  z-index: -1; //let it underneath all the other items
+  width: 36vw;
+  height: 110vh;
+}
+
+header {
+  nav {
+    width: 100%;
+    ul {
+      padding: 2rem;
+      // to keep the nav bar in the size I want
+      width: 70%;
+      display: flex;
+      // remove the dot infront of the list
+      list-style-type: none;
+      //make the content separated even in "ul container"
+      justify-content: space-around;
+      li {
+        font-size: 2rem;
+        font-weight: 400;
+        a {
+          color: black;
+          //remove the underscore
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .active {
+    color: rgb(27, 68, 116);
+  }
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+
+  section.left {
+    flex: 3 1 500px;
+    padding: 3rem 6rem 3rem 6rem;
+    h1 {
+      font-size: 2rem;
+      font-weight: 400;
+      color: rgb(27, 68, 116);
+    }
+    p {
+      font-size: 1.5rem;
+      padding: 1rem 0rem;
+    }
+  }
+
+  section.right {
+    flex: 1 1 500px;
+    position: relative;
+    img {
+      width: 21vw;
+      height: 21vw;
+      position: absolute;
+      top: 30vh;
+      left: 9vw;
+      transform: translateY(-50%);
+    }
+  }
+  //reseme page//
+  section.resume_left {
+    flex: 6 1 1200px;
+    padding: 3vw 0vw 0vw 6vw;
+    hr {
+      border: 2px solid rgb(27, 68, 116);
+      width: 58vw;
+    }
+    p.bio {
+      color: rgb(27, 68, 116);
+      font-size: 1.5rem;
+      padding-bottom: 5vh;
+    }
+    div.resume_info {
+      display: flex;
+      flex-direction: column;
+      h3 {
+        font-weight: 500;
+        font-size: 1.5rem;
+        padding-right: 6vw;
+      }
+      table {
+        padding-right: 2.3rem;
+        font-weight: 200;
+        font-size: 1.5rem;
+      }
+      p {
+        font-weight: 200;
+        font-size: 1.5rem;
+      }
+      div.edu {
+        display: flex;
+        flex-direction: row;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+      }
+      div.skills {
+        display: flex;
+        flex-direction: row;
+        padding-top: 2vh;
+        div.right {
+          display: flex;
+          flex-direction: column;
+          div.development {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 2vh;
+            .develop {
+              padding-left: 3.6vw;
+              padding-right: 3.6vw;
+            }
+          }
+          div.design {
+            display: flex;
+            flex-direction: row;
+            .design {
+              padding-left: 3.6vw;
+              padding-right: 8.2vw;
+            }
+          }
+        }
+      }
+    }
+  }
+  section.resume_right {
+    flex: 1 1 500px;
+    img {
+      padding: 3vw 5vw 3vw 0vw;
+    }
+  }
+  //form//
+  section.form{
+    flex: 1 1 600px;
+    padding-left: 3.6rem;
+    form{
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      //separated evenly in 70vh
+      justify-content: space-around;
+      padding: 1.5rem;
+      div{
+        margin: 0.5rem;
+        label{
+          font-size: 1.5rem;
+        }
+        input, textarea{
+          background-color: lightgray;
+          color: white;
+          font-size: 1.25rem;
+          padding: 0.5rem 0.25rem;
+          border: none;
+          width: 80%;
+          margin-left: 6rem;
+        }
+        textarea{
+          vertical-align: top;
+        }
+      }
+      button{
+        align-self: center;
+        width: 10rem;
+        background-color: lightgray;
+        border: none;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        padding: 0.6rem 2rem;
+        font-size: 1.5rem;
+      }
+    }
+    
+  }
+  div.line{
+    background-color:rgb(27, 68, 116);
+    width: 3px;
+  }
+  section.contact{
+    flex: 1 1 500px;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    div.content{
+      h2{
+        color:rgb(27, 68, 116);
+        margin: 1rem 0rem;
+        width: 90%;
+      }
+    }
+
+  }
+}
+
+footer {
+  padding-left: 5rem;
+}
+
+@media screen and (max-width: 1480px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+
+    section.left {
+      flex: 5 1 500px;
+      padding: 3rem 6rem 3rem 3.6rem;
+      h1 {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: rgb(27, 68, 116);
+      }
+      p {
+        font-size: 1rem;
+        padding: 1rem 0rem;
+      }
+    }
+    section.right {
+      flex: 1 1 500px;
+      position: relative;
+      img {
+        width: 16vw;
+        height: 16vw;
+        position: absolute;
+        top: 30vh;
+        left: 12vw;
+        transform: translateY(-50%);
+      }
+    }
+    //reseme page//
+    section.resume_left {
+      flex: 6 1 1000px;
+      padding: 1vw 0vw 0vw 5vw;
+      hr {
+        border: 2px solid rgb(27, 68, 116);
+        width: 68vw;
+      }
+      div.resume_info {
+        display: flex;
+        flex-direction: column;
+        h3 {
+          padding-right: 3vw;
+        }
+        div.skills {
+          div.right {
+            div.development {
+              width: 61vw;
+              .develop {
+                padding-left: 5vw;
+                padding-right: 7.3vw;
+              }
+            }
+            div.design {
+              width: 61vw;
+              .design {
+                padding-left: 5vw;
+                padding-right: 0vw;
+              }
+            }
+          }
+        }
+      }
+    }
+    section.resume_right {
+      flex: 1 1 300px;
+      img {
+        width: 19vw;
+        padding: 0vw;
+      }
+    }
+    //contact//
+    section.form{
+      form{
+        button{
+          align-self: flex-end;
+          width: 6rem;
+          padding: 0rem;
+        }
+      }
+    }
+  }
+  footer {
+    padding-left: 3.6rem;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .background {
+    opacity: 90%;
+    height: 130vh;
+  }
+  header {
+    nav {
+      height: 26vh;
+      ul {
+        padding: 3.6rem;
+        flex-direction: column;
+        li {
+          padding: 0.5rem 0rem;
+        }
+      }
+    }
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    section.left {
+      flex: 1 1 700px;
+      padding: 3rem 6rem 3rem 3.6rem;
+      p {
+        font-size: 1.6rem;
+        padding: 1rem 0rem;
+      }
+    }
+    section.right {
+      flex: 1 1 300px;
+      position: relative;
+      img {
+        width: 19vw;
+        height: 19vw;
+        margin-right: 1.6rem;
+        position: absolute;
+        top: 3vh;
+        left: 6vw;
+        transform: translateY(-50%);
+      }
+    }
+    //resume//
+    section.resume_left {
+      padding-left: 7.3vw;
+      padding-right: 7.3vw;
+      hr {
+        width: 86vw;
+      }
+      div.resume_info {
+        div.skills {
+          div.right {
+            div.development {
+              width: 76vw;
+              .develop {
+                padding-left: 7vw;
+                padding-right: 7vw;
+              }
+            }
+            div.design {
+              width: 76vw;
+              .design {
+                padding-left: 7vw;
+                padding-right: 1vw;
+              }
+            }
+          }
+        }
+      }
+    }
+    section.resume_right {
+      img {
+        display: none;
+      }
+    }
+    //contact//
+    section.form{
+      padding-left: 2rem;
+      form{
+        button{
+          align-self: center;
+        }
+      }
+    }
+    div.line{
+      display: none;
+    }
+    section.contact{
+      h2{
+        padding-left: 2rem;
+      }
+    }
+  }
+  footer {
+    padding-left: 3.6rem;
+  }
+}
+@media (max-width: 400px) {
+  .background {
+    display: none;
+  }
+  header {
+    background-color: rgb(27, 68, 116);
+    width: 100vw;
+    nav {
+      height: 23vh;
+      ul {
+        padding: 1rem;
+        flex-direction: column;
+        li {
+          padding: 0rem;
+          font-size: 1.6rem;
+        }
+        a.active {
+          color: white;
+        }
+      }
+    }
+  }
+  main {
+    section.left {
+      padding: 2rem 1.2rem 3rem 1.2rem;
+      h1 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    section.right {
+      display: none;
+    }
+    //resume//
+    section.resume_left {
+      padding-left: 7vw;
+      width: 100vw;
+      p.bio {
+        font-size: 1rem;
+        padding-bottom: 2vh;
+      }
+      hr {
+        width: 86vw;
+      }
+      div.resume_info {
+        display: flex;
+        flex-direction: column;
+        h3 {
+          font-size: 1rem;
+        }
+        table {
+          font-size: 1rem;
+          border-spacing: 1rem;
+        }
+        p {
+          font-size: 1rem;
+          margin-bottom: 0.3rem;
+        }
+        div.edu {
+          display: flex;
+          flex-direction: column;
+        }
+        div.skills {
+          display: flex;
+          flex-direction: column;
+          padding-top: 2vh;
+          div.right {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            div.development {
+              display: flex;
+              flex-direction: column;
+              padding-bottom: 2vh;
+              .develop {
+                padding-left: 0vw;
+                padding-right: 3.6vw;
+              }
+            }
+            div.design {
+              display: flex;
+              flex-direction: column;
+              .design {
+                padding-left: 0vw;
+                padding-right: 8.2vw;
+              }
+            }
+          }
+        }
+      }
+    }
+    section.resume_right {
+      img {
+        display: none;
+      }
+    }
+    //contact///
+    section.form{
+      padding-left: 1.2rem;
+      form{
+        min-height: 90vh;
+        div{
+          margin: 0rem;
+          label{
+            font-size: 1rem;
+          }
+          input, textarea{
+            font-size: 1rem;
+            border: none;
+            width: 100%;
+            margin-left: 0rem;
+          }
+        }
+        button{
+          align-self: center;
+          width: 10rem;
+          padding: 0.6rem 2rem;
+          font-size: 1rem;
+        }
+      }
+      
+    }
+    section.contact{
+      display: flex;
+      align-items: left;
+      padding: 0rem;
+      div.content{
+        h2{
+          font-size: 0.6rem;
+          margin: 1.8rem 0rem;
+          width: 100%;
+        }
+      }
+  
+    }
+  }
+  footer {
+    padding: 1rem;
+    a {
+      img {
+        width: 12vw;
+      }
+    }
+  }
+}

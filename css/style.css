@@ -1,0 +1,659 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  top: -10vh;
+  right: 0;
+  z-index: -1;
+  width: 36vw;
+  height: 110vh;
+}
+
+header nav {
+  width: 100%;
+}
+
+header nav ul {
+  padding: 2rem;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+header .active {
+  color: #1b4474;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.left {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+  padding: 3rem 6rem 3rem 6rem;
+}
+
+main section.left h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #1b4474;
+}
+
+main section.left p {
+  font-size: 1.5rem;
+  padding: 1rem 0rem;
+}
+
+main section.right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  position: relative;
+}
+
+main section.right img {
+  width: 21vw;
+  height: 21vw;
+  position: absolute;
+  top: 30vh;
+  left: 9vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+main section.resume_left {
+  -webkit-box-flex: 6;
+      -ms-flex: 6 1 1200px;
+          flex: 6 1 1200px;
+  padding: 3vw 0vw 0vw 6vw;
+}
+
+main section.resume_left hr {
+  border: 2px solid #1b4474;
+  width: 58vw;
+}
+
+main section.resume_left p.bio {
+  color: #1b4474;
+  font-size: 1.5rem;
+  padding-bottom: 5vh;
+}
+
+main section.resume_left div.resume_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section.resume_left div.resume_info h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding-right: 6vw;
+}
+
+main section.resume_left div.resume_info table {
+  padding-right: 2.3rem;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+main section.resume_left div.resume_info p {
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+main section.resume_left div.resume_info div.edu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+main section.resume_left div.resume_info div.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 2vh;
+}
+
+main section.resume_left div.resume_info div.skills div.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section.resume_left div.resume_info div.skills div.right div.development {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 2vh;
+}
+
+main section.resume_left div.resume_info div.skills div.right div.development .develop {
+  padding-left: 3.6vw;
+  padding-right: 3.6vw;
+}
+
+main section.resume_left div.resume_info div.skills div.right div.design {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main section.resume_left div.resume_info div.skills div.right div.design .design {
+  padding-left: 3.6vw;
+  padding-right: 8.2vw;
+}
+
+main section.resume_right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+}
+
+main section.resume_right img {
+  padding: 3vw 5vw 3vw 0vw;
+}
+
+main section.form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+  padding-left: 3.6rem;
+}
+
+main section.form form {
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1.5rem;
+}
+
+main section.form form div {
+  margin: 0.5rem;
+}
+
+main section.form form div label {
+  font-size: 1.5rem;
+}
+
+main section.form form div input, main section.form form div textarea {
+  background-color: lightgray;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.5rem 0.25rem;
+  border: none;
+  width: 80%;
+  margin-left: 6rem;
+}
+
+main section.form form div textarea {
+  vertical-align: top;
+}
+
+main section.form form button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 10rem;
+  background-color: lightgray;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  padding: 0.6rem 2rem;
+  font-size: 1.5rem;
+}
+
+main div.line {
+  background-color: #1b4474;
+  width: 3px;
+}
+
+main section.contact {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+main section.contact div.content h2 {
+  color: #1b4474;
+  margin: 1rem 0rem;
+  width: 90%;
+}
+
+footer {
+  padding-left: 5rem;
+}
+
+@media screen and (max-width: 1480px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main section.left {
+    -webkit-box-flex: 5;
+        -ms-flex: 5 1 500px;
+            flex: 5 1 500px;
+    padding: 3rem 6rem 3rem 3.6rem;
+  }
+  main section.left h1 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #1b4474;
+  }
+  main section.left p {
+    font-size: 1rem;
+    padding: 1rem 0rem;
+  }
+  main section.right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 500px;
+            flex: 1 1 500px;
+    position: relative;
+  }
+  main section.right img {
+    width: 16vw;
+    height: 16vw;
+    position: absolute;
+    top: 30vh;
+    left: 12vw;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  main section.resume_left {
+    -webkit-box-flex: 6;
+        -ms-flex: 6 1 1000px;
+            flex: 6 1 1000px;
+    padding: 1vw 0vw 0vw 5vw;
+  }
+  main section.resume_left hr {
+    border: 2px solid #1b4474;
+    width: 68vw;
+  }
+  main section.resume_left div.resume_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section.resume_left div.resume_info h3 {
+    padding-right: 3vw;
+  }
+  main section.resume_left div.resume_info div.skills div.right div.development {
+    width: 61vw;
+  }
+  main section.resume_left div.resume_info div.skills div.right div.development .develop {
+    padding-left: 5vw;
+    padding-right: 7.3vw;
+  }
+  main section.resume_left div.resume_info div.skills div.right div.design {
+    width: 61vw;
+  }
+  main section.resume_left div.resume_info div.skills div.right div.design .design {
+    padding-left: 5vw;
+    padding-right: 0vw;
+  }
+  main section.resume_right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 300px;
+            flex: 1 1 300px;
+  }
+  main section.resume_right img {
+    width: 19vw;
+    padding: 0vw;
+  }
+  main section.form form button {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 6rem;
+    padding: 0rem;
+  }
+  footer {
+    padding-left: 3.6rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .background {
+    opacity: 90%;
+    height: 130vh;
+  }
+  header nav {
+    height: 26vh;
+  }
+  header nav ul {
+    padding: 3.6rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav ul li {
+    padding: 0.5rem 0rem;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main section.left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 700px;
+            flex: 1 1 700px;
+    padding: 3rem 6rem 3rem 3.6rem;
+  }
+  main section.left p {
+    font-size: 1.6rem;
+    padding: 1rem 0rem;
+  }
+  main section.right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 300px;
+            flex: 1 1 300px;
+    position: relative;
+  }
+  main section.right img {
+    width: 19vw;
+    height: 19vw;
+    margin-right: 1.6rem;
+    position: absolute;
+    top: 3vh;
+    left: 6vw;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  main section.resume_left {
+    padding-left: 7.3vw;
+    padding-right: 7.3vw;
+  }
+  main section.resume_left hr {
+    width: 86vw;
+  }
+  main section.resume_left div.resume_info div.skills div.right div.development {
+    width: 76vw;
+  }
+  main section.resume_left div.resume_info div.skills div.right div.development .develop {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+  main section.resume_left div.resume_info div.skills div.right div.design {
+    width: 76vw;
+  }
+  main section.resume_left div.resume_info div.skills div.right div.design .design {
+    padding-left: 7vw;
+    padding-right: 1vw;
+  }
+  main section.resume_right img {
+    display: none;
+  }
+  main section.form {
+    padding-left: 2rem;
+  }
+  main section.form form button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main div.line {
+    display: none;
+  }
+  main section.contact h2 {
+    padding-left: 2rem;
+  }
+  footer {
+    padding-left: 3.6rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .background {
+    display: none;
+  }
+  header {
+    background-color: #1b4474;
+    width: 100vw;
+  }
+  header nav {
+    height: 23vh;
+  }
+  header nav ul {
+    padding: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav ul li {
+    padding: 0rem;
+    font-size: 1.6rem;
+  }
+  header nav ul a.active {
+    color: white;
+  }
+  main section.left {
+    padding: 2rem 1.2rem 3rem 1.2rem;
+  }
+  main section.left h1 {
+    font-size: 1.2rem;
+  }
+  main section.left p {
+    font-size: 1rem;
+  }
+  main section.right {
+    display: none;
+  }
+  main section.resume_left {
+    padding-left: 7vw;
+    width: 100vw;
+  }
+  main section.resume_left p.bio {
+    font-size: 1rem;
+    padding-bottom: 2vh;
+  }
+  main section.resume_left hr {
+    width: 86vw;
+  }
+  main section.resume_left div.resume_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section.resume_left div.resume_info h3 {
+    font-size: 1rem;
+  }
+  main section.resume_left div.resume_info table {
+    font-size: 1rem;
+    border-spacing: 1rem;
+  }
+  main section.resume_left div.resume_info p {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  main section.resume_left div.resume_info div.edu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section.resume_left div.resume_info div.skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 2vh;
+  }
+  main section.resume_left div.resume_info div.skills div.right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+  }
+  main section.resume_left div.resume_info div.skills div.right div.development {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 2vh;
+  }
+  main section.resume_left div.resume_info div.skills div.right div.development .develop {
+    padding-left: 0vw;
+    padding-right: 3.6vw;
+  }
+  main section.resume_left div.resume_info div.skills div.right div.design {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section.resume_left div.resume_info div.skills div.right div.design .design {
+    padding-left: 0vw;
+    padding-right: 8.2vw;
+  }
+  main section.resume_right img {
+    display: none;
+  }
+  main section.form {
+    padding-left: 1.2rem;
+  }
+  main section.form form {
+    min-height: 90vh;
+  }
+  main section.form form div {
+    margin: 0rem;
+  }
+  main section.form form div label {
+    font-size: 1rem;
+  }
+  main section.form form div input, main section.form form div textarea {
+    font-size: 1rem;
+    border: none;
+    width: 100%;
+    margin-left: 0rem;
+  }
+  main section.form form button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 10rem;
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+  }
+  main section.contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    padding: 0rem;
+  }
+  main section.contact div.content h2 {
+    font-size: 0.6rem;
+    margin: 1.8rem 0rem;
+    width: 100%;
+  }
+  footer {
+    padding: 1rem;
+  }
+  footer a img {
+    width: 12vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */
